@@ -2,10 +2,9 @@
 
 version: 2
 updates:
-  - package-ecosystem: "bundler"
+  - package-ecosystem: "npm"
     directories:
-      - "/frontend"
-      - "/backend"
-      - "/admin"
+      - "/subfolder1"
+      - "/subfolder2"
     schedule:
       interval: "weekly"
