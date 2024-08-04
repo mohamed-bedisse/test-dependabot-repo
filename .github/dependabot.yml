@@ -1,6 +1,23 @@
 version: 2
 updates:
   - package-ecosystem: "gitsubmodule"
-    directory: "/" # Location of your package.json
+    directory: "/"  # Root directory, assuming the submodules are directly under the root
     schedule:
-      interval: "daily" # Options: daily, weekly, monthly
+      interval: "daily"
+    commit-message:
+      prefix: "deps"
+      include: "scope"
+  - package-ecosystem: "npm"
+    directory: "/subfolder1"  # Directory of the first submodule
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "deps"
+      include: "scope"
+  - package-ecosystem: "npm"
+    directory: "/subfolder2"  # Directory of the second submodule
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "deps"
+      include: "scope"
