@@ -7,17 +7,6 @@ updates:
     commit-message:
       prefix: "deps"
       include: "scope"
-  - package-ecosystem: "npm"
-    directory: "/subfolder1"  # Directory of the first submodule
-    schedule:
-      interval: "daily"
-    commit-message:
-      prefix: "deps"
-      include: "scope"
-  - package-ecosystem: "npm"
-    directory: "/subfolder2"  # Directory of the second submodule
-    schedule:
-      interval: "daily"
-    commit-message:
-      prefix: "deps"
-      include: "scope"
+    allow:
+      - dependency-name: "subfolder1"
+      - dependency-name: "subfolder2"
