@@ -1,12 +1,11 @@
+# Specify locations of manifest files for each package manager using `directories`
+
 version: 2
 updates:
-  - package-ecosystem: "gitsubmodule"
-    directory: "/"  # Root directory, assuming the submodules are directly under the root
+  - package-ecosystem: "bundler"
+    directories:
+      - "/frontend"
+      - "/backend"
+      - "/admin"
     schedule:
-      interval: "daily"
-    commit-message:
-      prefix: "deps"
-      include: "scope"
-    allow:
-      - dependency-name: "subfolder1"
-      - dependency-name: "subfolder2"
+      interval: "weekly"
