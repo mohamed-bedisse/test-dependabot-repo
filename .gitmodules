@@ -1,6 +1,6 @@
-[submodule "./subfolder1"]
-  path = ./subfolder1
+[submodule "subfolder1"]
+  path = subfolder1
   url = git@github.com:mohamed-bedisse/subfolder1-repo.git
-[submodule "./subfolder2"]
-  path = ./subfolder2
+[submodule "subfolder2"]
+  path = subfolder2
   url = git@github.com:mohamed-bedisse/subfolder2-repo.git
