@@ -1,6 +1,6 @@
 version: 2
 updates:
-  - package-ecosystem: "npm"
+  - package-ecosystem: "gitsubmodule"
     directory: "/" # Location of your package.json
     schedule:
       interval: "daily" # Options: daily, weekly, monthly
