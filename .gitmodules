@@ -1,6 +1,6 @@
 [submodule "subfolder1"]
   path = subfolder1
-  url = https://github.com/mohamed-bedisse/test-dependabot-repo/tree/main/subfolder1
+  url = https://github.com/mohamed-bedisse/subfolder1-private.git
 [submodule "subfolder2"]
   path = subfolder2
-  url = https://github.com/mohamed-bedisse/test-dependabot-repo/tree/main/subfolder2
+  url = https://github.com/mohamed-bedisse/subfolder2-private.git
