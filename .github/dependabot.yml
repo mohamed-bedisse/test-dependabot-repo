@@ -1,10 +1,11 @@
 # Specify locations of manifest files for each package manager using `directories`
 
+# Specify all directories from the current layer and below recursively, using globstar, for locations of manifest files
+
 version: 2
 updates:
   - package-ecosystem: "npm"
     directories:
-      - "/subfolder1"
-      - "/subfolder2"
+      - "**/*"
     schedule:
-      interval: "weekly"
+      interval: "daily"
